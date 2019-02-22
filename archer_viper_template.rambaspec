@@ -21,6 +21,10 @@ code_files:
 - {name: View/ViewIO.swift, path: Code/View/view_input.swift.liquid}
 - {name: View/ViewController.swift, path: Code/View/viewcontroller.swift.liquid}
 
+# Router layer
+- {name: Router/RouterInput.swift, path: Code/Router/router_input.swift.liquid}
+- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
+
 # Presenter layer
 - {name: Presenter/Presenter.swift, path: Code/Presenter/presenter.swift.liquid}
 

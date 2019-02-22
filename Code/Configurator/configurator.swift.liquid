@@ -22,7 +22,9 @@ class {{ module_info.name }}ModuleConfigurator {
         presenter.view = viewController
         
         let interactor = {{ module_info.name }}Interactor()
-        
+        let router         = {{ module_info.name }}Router()
+        presenter.router = router
+        router.viewController = viewController
         presenter.interactor = interactor
         viewController.output = presenter
     }

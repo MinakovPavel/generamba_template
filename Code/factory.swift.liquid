@@ -19,7 +19,7 @@ struct {{ module_info.name }}Factory {
 
     func createModule() -> UIViewController {
         let storyboard = UIStoryboard(name: storyboardId, bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: initialControllerID)
+        let controller = storyboard.instantiateViewController(withIdentifier: initialControllerID) as! {{ module_info.name }}ViewController
         let presenter = {{ module_info.name }}Presenter()
         presenter.view = controller
         

@@ -28,6 +28,7 @@ struct {{ module_info.name }}Factory {
         presenter.router = router
         router.viewController = controller
         presenter.interactor = interactor
+        interactor.output = presenter
         controller.output = presenter
         return controller
     }
